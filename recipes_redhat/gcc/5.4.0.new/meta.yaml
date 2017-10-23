@@ -1,0 +1,22 @@
+package:
+  name: rg_gcc
+  version: "5.4.0"
+
+source:
+  fn: gcc-5.4.0.tar.bz2
+  url: http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-5.4.0/gcc-5.4.0.tar.bz2
+  md5: 4c626ac2a83ef30dfb9260e6f59c2b30
+
+build:
+  detect_binary_files_with_prefix: False # [not linux32]
+  number: 1
+  string: v1
+
+test:
+  commands:
+    - gcc --help
+
+about:
+  home: http://gcc.gnu.org/
+  summary: The GNU Compiler Collection
+  license: GPL

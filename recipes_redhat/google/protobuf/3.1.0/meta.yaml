@@ -1,0 +1,24 @@
+package:
+  name: rg_protobuf
+  version: "3.1.0"
+
+build:
+   number: 1
+   string: gcc5
+
+source:
+  fn: v3.1.0.tar.gz
+  url: https://github.com/google/protobuf/archive/v3.1.0.tar.gz
+  md5: 14a532a7538551d5def317bfca41dace
+
+requirements:
+  build:
+    - cmake 3.3.1
+    - rg_gcc 5.4.0
+  run:
+    - rg_gcc >=5.4.0
+
+about:
+  home: https://github.com/google/protobuf
+  license: Google Inc.
+  summary: Protocol Buffers (a.k.a., protobuf) are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.

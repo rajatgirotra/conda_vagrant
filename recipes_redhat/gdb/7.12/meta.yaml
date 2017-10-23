@@ -1,0 +1,23 @@
+package:
+  name: rg_gdb
+  version: "7.12"
+
+build:
+   number: 1
+   string: v1
+
+requirements:
+   build:
+   - rg_isl >=0.16
+   run:
+   - rg_isl >=0.16
+ 
+
+source:
+  fn: gdb-7.12.tar.xz
+  url: https://ftp.gnu.org/gnu/gdb/gdb-7.12.tar.xz
+  md5: a0a3a00f7499b0c5278ba8676745d180
+
+about:
+  home: https://www.gnu.org/software/gdb
+  license: GNU General Public License, version 3.

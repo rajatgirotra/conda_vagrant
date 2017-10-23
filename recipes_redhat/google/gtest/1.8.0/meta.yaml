@@ -1,0 +1,24 @@
+package:
+  name: rg_gtest
+  version: "1.8.0"
+
+build:
+   number: 1
+   string: gcc5
+
+source:
+  fn: release-1.8.0.tar.gz
+  url: https://github.com/google/googletest/archive/release-1.8.0.tar.gz
+  md5: 16877098823401d1bf2ed7891d7dce36
+
+requirements:
+  build:
+    - cmake 3.3.1
+    - rg_gcc 5.4.0
+  run:
+    - rg_gcc >=5.4.0
+
+about:
+  home: https://github.com/google/googletest
+  license: Google Inc.
+  summary: googletest is a merger of the formerly separate GoogleTest and GoogleMock projects. These were so closely related that it makes sense to maintain and release them together.

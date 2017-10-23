@@ -1,0 +1,30 @@
+package:
+  name: rg_python_base.ubuntu
+  version: "3.6.3"
+
+source:
+  fn: Python-3.6.3.tar.xz
+  url: https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tar.xz
+  md5: b9c2c36c33fb89bda1fefd37ad5af9be
+
+requirements:
+  build:
+    - rg_patchelf >=0.8
+    - rg_gcc  5.4.0
+  run:
+    - rg_gcc  >=5.4.0
+
+build:
+  no_link: bin/python3
+  number: 1
+  string: gcc5
+
+test:
+  commands:
+    - python3 -V               [unix]
+    - pip3 --version           [unix]
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  summary: general purpose programming language

@@ -1,0 +1,36 @@
+package:
+  name: rg_gcc
+  version: "5.4.0"
+
+source:
+  fn: gcc-5.4.0.tar.bz2
+  url: http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-5.4.0/gcc-5.4.0.tar.bz2
+  md5: 4c626ac2a83ef30dfb9260e6f59c2b30
+
+build:
+  detect_binary_files_with_prefix: True # [not linux32]
+  number: 1
+  string: v2
+
+requirements:
+  build:
+    # These are taken from the output of the configure scripts
+    # Do not make gcc a build dependency (you will need to add it to the PATH manually)
+    - rg_gmp  >=4.3.2
+    - rg_mpfr >=2.4.2
+    - rg_mpc  >=0.8.1
+    - rg_isl  >=0.16.1
+  run:
+    - rg_gmp  >=4.3.2
+    - rg_mpfr >=2.4.2
+    - rg_mpc  >=0.8.1
+    - rg_isl  >=0.16.1
+
+test:
+  commands:
+    - gcc --help
+
+about:
+  home: http://gcc.gnu.org/
+  summary: The GNU Compiler Collection
+  license: GPL

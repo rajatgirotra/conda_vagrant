@@ -1,0 +1,34 @@
+package:
+  name: rg_python.redhat
+  version: "2.7.13"
+
+build:
+  number: 1
+  string: gcc5
+
+source:
+  path: .
+
+requirements:
+  build:
+    - rg_python_base.redhat 2.7.13 gcc5
+  run:
+    - rg_python_base.redhat 2.7.13 gcc5
+
+test:
+  imports:
+    - jinja2
+    - arrow
+    - paramiko
+    - gevent
+    - greenlet
+    - requests
+  commands:
+    - scons --version              [unix]
+    - bumpversion -h               [unix]
+
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  summary: general purpose programming language

@@ -1,0 +1,24 @@
+package:
+  name: rg_gsoap
+  version: 2.8.41
+
+build:
+  number: 1
+  string: gcc5
+
+requirements:
+   build:
+    - rg_gcc 5.4.0
+   run:
+    - rg_gcc >=5.4.0
+      
+
+source:
+  fn:  gsoap_2.8.41.zip
+  url: https://sourceforge.net/projects/gsoap2/files/gsoap-2.8/gsoap_2.8.41.zip
+  md5: c64bd65e49691fd3139a605bd79866f0
+
+about:
+  home: http://www.cs.fsu.edu/~engelen/soap.html
+  license: GPL v2
+

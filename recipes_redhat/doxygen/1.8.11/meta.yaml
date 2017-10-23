@@ -1,0 +1,20 @@
+package:
+  name: rg_doxygen
+  version: "1.8.11"
+
+build:
+   number: 1
+   string: v1
+
+source:
+  fn: doxygen-1.8.11.src.tar.gz
+  url: http://ftp.stack.nl/pub/doxygen/doxygen-1.8.11.src.tar.gz
+  md5: f4697a444feaed739cfa2f0644abc19b
+
+requirements:
+  build:
+    - cmake 3.3.1
+
+about:
+  home: http://www.stack.nl/~dimitri/doxygen/
+  license: GPL

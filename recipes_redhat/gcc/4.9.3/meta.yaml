@@ -1,0 +1,36 @@
+package:
+  name: rg_gcc
+  version: "4.9.3"
+
+source:
+  fn: gcc-4.9.3.tar.bz2
+  url: http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-4.9.3/gcc-4.9.3.tar.bz2
+  md5: 6f831b4d251872736e8e9cc09746f327
+
+build:
+  detect_binary_files_with_prefix: false # [not linux32]
+  number: 1
+  string: v1
+
+requirements:
+  build:
+    # These are taken from the output of the configure scripts
+    - rg_gmp  >=4.3.2
+    - rg_mpfr >=2.4.2
+    - rg_mpc  >=0.8.1
+    - rg_isl  0.14
+    # Do not make gcc a build dependency (you will need to add it to the PATH manually)
+  run:
+    - rg_gmp  >=4.3.2
+    - rg_mpfr >=2.4.2
+    - rg_mpc  >=0.8.1
+    - rg_isl 0.14
+
+test:
+  commands:
+    - gcc --help
+
+about:
+  home: http://gcc.gnu.org/
+  summary: The GNU Compiler Collection
+  license: GPL

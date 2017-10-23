@@ -1,0 +1,23 @@
+package:
+  name: rg_jsoncpp
+  version: "1.8.0"
+
+build:
+   number: 1
+   string: gcc5
+
+source:
+  git_url: https://github.com/open-source-parsers/jsoncpp.git
+  git_rev: 1.8.0
+
+requirements:
+  build:
+    - cmake 3.3.1
+    - rg_gcc 5.4.0
+  run:
+    - rg_gcc >=5.4.0
+
+about:
+  home: JSONCPP on Github
+  license: MIT
+  summary: JsonCpp is a C++ library that allows manipulating JSON values, including serialization and deserialization to and from strings. It can also preserve existing comment in unserialization/serialization steps, making it a convenient format to store user input files.

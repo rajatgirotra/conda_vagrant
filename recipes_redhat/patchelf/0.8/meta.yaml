@@ -1,0 +1,16 @@
+package:
+  name: rg_patchelf
+  version: "0.8"
+
+build:
+  number: 1
+  string: v1
+
+source:
+  fn: patchelf-0.8.tar.bz2
+  url: http://nixos.org/releases/patchelf/patchelf-0.8/patchelf-0.8.tar.bz2
+  md5: 5b151e3c83b31f5931b4a9fc01635bfd
+
+about:
+  license: GPL3
+  summary: "PatchELF is a small utility to modify the dynamic linker and RPATH of ELF executables"

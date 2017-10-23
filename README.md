@@ -1,2 +1,2 @@
 # conda_vagrant
-Prebuilt conda binary packages - Uses vagrant
+Packaged builds of development tools using conda.

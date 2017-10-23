@@ -1,0 +1,33 @@
+package:
+  name: rg_boost.redhat
+  version: "1.63.0"
+
+build:
+  number: 1
+  string: gcc5
+
+source:
+  fn:  boost_1_63_0.tar.bz2
+  url: http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.bz2
+  md5: 1c837ecd990bb022d07e7aab32b09847
+
+requirements:
+  build:
+    - rg_python_base.redhat 2.7.13 gcc5
+    - rg_gcc 5.4.0
+    - icu               [unix]
+    - bzip2             [unix]
+    - zlib
+
+  run:
+    # python dependency is here due to libboost-python library that depends on
+    # python version
+    - rg_python_base.redhat 2.7.13 gcc5
+    - rg_gcc >=5.4.0
+    - icu               [unix]
+    - zlib
+
+about:
+  home: http://www.boost.org/
+  license: Boost-1.0
+

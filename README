@@ -1,0 +1,5 @@
+Install Vagrant
+Install VirtualBox
+Install VBGuest plugin (something like vagrant plugin install vbguest)
+sudo /etc/init.d/vboxdrv setup
+sudo /sbin/rcvboxdrv setup

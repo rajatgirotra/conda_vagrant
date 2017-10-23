@@ -1,0 +1,25 @@
+package:
+  name: rg_mpc
+  version: "1.0.3"
+
+build:
+   number: 1
+   string: v1
+
+source:
+  fn: mpc-1.0.3.tar.gz
+  url: http://ftp.kaist.ac.kr/gnu/gnu/mpc/mpc-1.0.3.tar.gz
+  sha1: b8be66396c726fdc36ebb0f692ed8a8cca3bcc66
+
+requirements:
+  build:
+    - rg_gmp >=4.3.2
+    - rg_mpfr >=2.4.2
+  run:
+    - rg_gmp >=4.3.2
+    - rg_mpfr >=2.4.2
+
+about:
+  home: http://www.multiprecision.org/
+  license: GPL
+  summary: Gnu Mpc is a C library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.

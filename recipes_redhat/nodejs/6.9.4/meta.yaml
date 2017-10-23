@@ -1,0 +1,30 @@
+package:
+  name: rg_nodejs.redhat
+  version: "6.9.4"
+
+build:
+  number: 1
+  string: gcc5
+
+source:
+  fn: node-v6.9.4.tar.gz
+  url: https://nodejs.org/dist/v6.9.4/node-v6.9.4.tar.gz
+  md5: 3795199b5950b25179248847b1a5fc86
+
+requirements:
+  build:
+    - rg_gcc 5.4.0
+    - rg_python_base.redhat 2.7.13 gcc5
+
+  run:
+    - rg_python_base.redhat 2.7.13 gcc5
+    - rg_gcc >=5.4.0
+
+test:
+  commands:
+    - node --version               [unix]
+
+about:
+  home: https://nodejs.org/en/
+  license: MIT
+  summary: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.

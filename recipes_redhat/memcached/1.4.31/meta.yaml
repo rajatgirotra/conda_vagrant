@@ -1,0 +1,26 @@
+package:
+  name: rg_memcached
+  version: "1.4.31"
+
+source:
+  fn: memcached-1.4.31.tar.gz
+  url: https://memcached.org/files/memcached-1.4.31.tar.gz
+  sha1: 3ea34f5bc5c5aacb76cfc07f4ee5847f33526cb6
+
+requirements:
+  build:
+    - rg_gcc 5.4.0
+    - rg_libevent 2.0.22 gcc5
+  
+  run:
+    - rg_libevent 2.0.22 gcc5
+    - rg_gcc >=5.4.0
+
+build:
+  number: 1
+  string: gcc5
+
+about:
+  home: https://memcached.org
+  license: BSD
+  summary: Free & open source, high-performance, distributed memory object caching system

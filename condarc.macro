@@ -1,0 +1,56 @@
+# the conda rc file uses YAML syntax. Nothing to explain about YAML,
+# just see the format below and you'll get an idea
+
+# channels - Channels are URL's which conda will use in the specified order to look
+# for packages. Non-URL channels will be assumed to be Anaconda.org usernames.
+# If no channels is specified, conda uses some internal defaults.
+channels:
+   - file:///home/DEFAULT_USER/conda_builds
+   - defaults
+
+# Setting this to true means that conda will assume Yes as an answer before installing a package.
+# it will not keep asking you. Lets set to False, so you can check what you are doing.
+always_yes: False
+
+
+# Show channel URLs when displaying what is going to be downloaded and
+# when you run 'conda list'. The default is False.
+# look at the last column in "conda list" which displays the channel information.
+show_channel_urls: True
+
+# When you run the activate command to switch to a conda environment. change the
+# command prompt to display the environment path
+changeps1: True
+
+# When listing python packages that are installed, use output of pip
+# command also. Does not effect conda functionality in anyway.
+use_pip: True
+
+# If you are behind a firewall, you can set proxy servers here
+#proxy_servers:
+
+# Offline mode means that filter out all channel URLs which do not use the file:// protocol.
+# The default is False.
+offline: False
+
+# When a channel specified is not a URL, conda uses the channel_alias setting and appends the
+# given channel name to the channel_alias to arrive at a URL. Default channel_alias is
+# https://conda.anaconda.org
+# So channel abcd means https://conda.anaconda.org/abcd
+# conda install --channel asmeurer <package> also means
+# conda install --channel https://conda.anaconda.org/asmeurer <package> 
+channel_alias: http://conda.anaconda.org
+
+# When creating a new conda environment add these packages by default:
+# create_default_packages:
+#  - ipython
+
+# You can also build packages using "conda build" command. There are options to control this.
+# conda can automatically upload packages built with "conda_build" to anaconda.
+# anaconda_upload will prevent this
+anaconda_upload: False
+
+# conda packages will by default be installed to this folder:
+# by default it is conda_install_dir/conda-builds
+conda-build:
+  root-dir: '/home/DEFAULT_USER/conda_builds'
