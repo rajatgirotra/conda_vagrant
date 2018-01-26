@@ -16,7 +16,8 @@ PIP="${PREFIX}/bin/pip3"
 
 echo "PIP is $PIP"
 
-${PIP} install --upgrade pip
+# Put a workaround to shorten the SHEBANG LINE, otherwise pip upgrade wont work
+#${PIP} install --upgrade pip
 
 # patchelf.
 for file in $(ls python*);
