@@ -1,0 +1,45 @@
+package:
+  name: rg_gcc
+  version: "7.3.0"
+
+source:
+  # specify one or more url, or git,svn,hg or local paths
+  - url: http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-7.3.0/gcc-7.3.0.tar.gz
+    folder: gcc
+    md5: 747d5010b7c6938b480bc6e4d7c4be9a
+  - url: http://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.gz
+    folder: binutils
+    md5: a332503c7f72ad02f4ef624fac34c4af
+  #- git_url: https://github.com/ilanschnell/bsdiff4.git
+  #  git_rev: 1.1.4
+  #- hg_url: ssh://hg@bitbucket.org/ilanschnell/bsdiff4
+  #  hg_tag: 1.1.4
+  #- svn_url: https://github.com/ilanschnell/bsdiff
+  #  svn_rev: 1.1.4
+  #  svn_ignore_externals: True # (defaults to False)
+  #- path: ../src
+
+build:
+  detect_binary_files_with_prefix: False # [not linux32]
+  number: 1
+  # string: v1 # by default the build string will be the conda-build string.
+  # script: <script_name>.sh <args> to execute instead of running build.sh
+  # rpaths: # use the following rpaths in executables
+  #  - lib/
+  #  - lib64/
+  #  always_include_files: # include files which are already in the bin folder (from dependencies)
+  #     - bin/file1
+  #     - bin/file2
+
+requirements:
+    build:
+    run:
+
+test:
+  commands:
+    - gcc --help
+
+about:
+  home: http://gcc.gnu.org/
+  summary: The GNU Compiler Collection
+  license: GPL

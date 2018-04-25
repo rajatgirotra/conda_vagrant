@@ -13,9 +13,9 @@ build:
 
 requirements:
   build:
-    - rg_gmp >=6.1.0
+    - rg_gmp 6.1.2 v1
   run:
-    - rg_gmp >=6.1.0
+    - rg_gmp 6.1.2 v1
 
 about:
   license: MIT
