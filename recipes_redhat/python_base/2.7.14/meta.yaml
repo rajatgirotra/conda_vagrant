@@ -1,23 +1,22 @@
 package:
   name: rg_python_base.redhat
-  version: "2.7.13"
+  version: "2.7.14"
 
 source:
-  fn: Python-2.7.13.tar.xz
-  url: https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
-  md5: 53b43534153bb2a0363f08bae8b9d990
+  url: https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz
+  md5: 1f6db41ad91d9eb0a6f0c769b8613c5b
 
 requirements:
   build:
     - rg_patchelf >=0.8
-    - rg_gcc  5.4.0
+    - rg_gcc >=5.5
   run:
-    - rg_gcc  >=5.4.0
+    - rg_gcc >=5.5
 
 build:
   no_link: bin/python
   number: 1
-  string: gcc5
+  string: gcc55
 
 test:
   commands:

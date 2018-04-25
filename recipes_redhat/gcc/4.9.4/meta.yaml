@@ -47,7 +47,8 @@ requirements:
 
 test:
   commands:
-    - gcc --help
+    - g++ --version
+    - ld --version
 
 about:
   home: http://gcc.gnu.org/

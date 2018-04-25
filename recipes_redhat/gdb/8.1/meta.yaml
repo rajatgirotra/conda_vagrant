@@ -1,6 +1,6 @@
 package:
   name: rg_gdb
-  version: "7.12"
+  version: "8.1"
 
 build:
    number: 1
@@ -8,15 +8,14 @@ build:
 
 requirements:
    build:
-   - rg_isl >=0.16
+     - rg_doxygen >=1.8
    run:
-   - rg_isl >=0.16
+     - rg_doxygen >=1.8
  
 
 source:
-  fn: gdb-7.12.tar.xz
-  url: https://ftp.gnu.org/gnu/gdb/gdb-7.12.tar.xz
-  md5: a0a3a00f7499b0c5278ba8676745d180
+  url: https://ftp.gnu.org/gnu/gdb/gdb-8.1.tar.gz
+  md5: 0c85ecbb43569ec43b1c9230622e84ab
 
 about:
   home: https://www.gnu.org/software/gdb

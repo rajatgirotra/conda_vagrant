@@ -1,15 +1,14 @@
 package:
   name: rg_doxygen
-  version: "1.8.11"
+  version: "1.8.14"
 
 build:
    number: 1
    string: v1
 
 source:
-  fn: doxygen-1.8.11.src.tar.gz
-  url: http://ftp.stack.nl/pub/doxygen/doxygen-1.8.11.src.tar.gz
-  md5: f4697a444feaed739cfa2f0644abc19b
+  url: http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.14.src.tar.gz
+  md5: 41d8821133e8d8104280030553e2b42b
 
 requirements:
   build:

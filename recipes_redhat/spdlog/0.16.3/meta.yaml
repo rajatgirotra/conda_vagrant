@@ -3,20 +3,19 @@ package:
   version: "0.16.3"
 
 source:
-  fn: v0.16.3.tar.gz
   url: https://github.com/gabime/spdlog/archive/v0.16.3.tar.gz
-  md5: c4c56f986aa985677ca1db89630a2e11
+  md5: 1837d2905d60afb4d888793b79f7b140
 
 build:
   number: 1
-  string: gcc5
+  string: gcc55
 
 requirements:
    build:
     - cmake 3.3.1
-    - rg_gcc 5.4.0
+    - rg_gcc >=5.5
    run:
-    - rg_gcc >=5.4.0
+    - rg_gcc >=5.5
 
 about:
   home: https://github.com/gabime/spdlog
