@@ -1,21 +1,21 @@
 package:
   name: rg_jsoncpp
-  version: "1.8.0"
+  version: "1.8.4"
 
 build:
    number: 1
-   string: gcc5
+   string: gcc55
 
 source:
-  git_url: https://github.com/open-source-parsers/jsoncpp.git
-  git_rev: 1.8.0
+  url: https://github.com/open-source-parsers/jsoncpp/archive/1.8.4.tar.gz
+  md5: fa47a3ab6b381869b6a5f20811198662
 
 requirements:
   build:
     - cmake 3.3.1
-    - rg_gcc 5.4.0
+    - rg_gcc =5.5
   run:
-    - rg_gcc >=5.4.0
+    - rg_gcc >=5.5
 
 about:
   home: JSONCPP on Github

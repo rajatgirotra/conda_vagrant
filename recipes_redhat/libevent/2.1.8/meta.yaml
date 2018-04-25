@@ -1,0 +1,22 @@
+package:
+  name: rg_libevent
+  version: "2.1.8"
+
+source:
+  url: https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
+  md5: f3eeaed018542963b7d2416ef1135ecc
+
+build:
+  number: 1
+  string: gcc55
+
+requirements:
+   build:
+    -  rg_gcc =5.5
+   run:
+    -  rg_gcc >=5.5
+
+about:
+  home: http://libevent.org/
+  license: BSD 
+  summary: an event notification library

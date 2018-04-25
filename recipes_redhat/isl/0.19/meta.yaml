@@ -1,0 +1,21 @@
+package:
+  name: rg_isl
+  version: "0.19"
+
+source:
+  url: http://isl.gforge.inria.fr/isl-0.19.tar.gz
+  md5: 5a2dc001276a227509b2bab3382e461f
+
+build:
+  number: 1
+  string: v1
+
+requirements:
+  build:
+    - rg_gmp 6.1.2 v1
+  run:
+    - rg_gmp 6.1.2 v1
+
+about:
+  license: MIT
+  summary: "isl is a thread-safe C library for manipulating sets and relations of integer points bounded by affine constraints."

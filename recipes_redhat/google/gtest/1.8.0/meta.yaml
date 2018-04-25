@@ -4,7 +4,7 @@ package:
 
 build:
    number: 1
-   string: gcc5
+   string: gcc55
 
 source:
   fn: release-1.8.0.tar.gz
@@ -14,9 +14,9 @@ source:
 requirements:
   build:
     - cmake 3.3.1
-    - rg_gcc 5.4.0
+    - rg_gcc =5.5
   run:
-    - rg_gcc >=5.4.0
+    - rg_gcc >=5.5
 
 about:
   home: https://github.com/google/googletest
