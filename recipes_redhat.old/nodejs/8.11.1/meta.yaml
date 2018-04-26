@@ -1,0 +1,29 @@
+package:
+  name: rg_nodejs.redhat
+  version: "8.11.1"
+
+build:
+  number: 1
+  string: gcc55
+
+source:
+  url: https://nodejs.org/dist/v8.11.1/node-v8.11.1.tar.gz
+  md5: e0fe79fdf48c3e6dff9371ac29d52717
+
+requirements:
+  build:
+    - rg_gcc =5.5
+    - rg_python_base.redhat 2.7.14 gcc55
+
+  run:
+    - rg_python_base.redhat 2.7.14 gcc55
+    - rg_gcc >=5.5
+
+test:
+  commands:
+    - node --version               [unix]
+
+about:
+  home: https://nodejs.org/en/
+  license: MIT
+  summary: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.

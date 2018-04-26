@@ -1,0 +1,23 @@
+package:
+  name: rg_spdlog
+  version: "0.16.3"
+
+source:
+  url: https://github.com/gabime/spdlog/archive/v0.16.3.tar.gz
+  md5: 1837d2905d60afb4d888793b79f7b140
+
+build:
+  number: 1
+  string: gcc55
+
+requirements:
+   build:
+    - cmake 3.3.1
+    - rg_gcc =5.5
+   run:
+    - rg_gcc >=5.5
+
+about:
+  home: https://github.com/gabime/spdlog
+  license: FREE 
+  summary: Super Fast C++ logging library

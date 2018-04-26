@@ -1,0 +1,15 @@
+package:
+  name: rg_valgrind
+  version: "3.13.0"
+
+build:
+   number: 1
+   string: v1
+
+source:
+  url: ftp://sourceware.org/pub/valgrind/valgrind-3.13.0.tar.bz2
+  md5: 817dd08f1e8a66336b9ff206400a5369
+
+about:
+  home: http://valgrind.org/
+  license: GNU General Public License, version 2.

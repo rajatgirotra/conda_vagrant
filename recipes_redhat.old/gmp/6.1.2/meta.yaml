@@ -1,0 +1,18 @@
+package:
+  name: rg_gmp
+  version: "6.1.2"
+
+build:
+  number: 1
+  string: v1
+source:
+  url: https://gmplib.org/download/gmp/gmp-6.1.2.tar.bz2
+  md5: 8ddbb26dc3bd4e2302984debba1406a5
+
+about:
+  home: http://gmplib.org/
+  license: GPL 3
+
+test:
+  files:
+    - test.c

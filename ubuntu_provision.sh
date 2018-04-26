@@ -6,7 +6,9 @@ echo "Ubuntu Provisioning"
 sudo apt-get update
 sudo apt-get install -y g++ libsqlite3-dev libbz2-dev libreadline-dev zlib1g-dev libssl-dev libgdbm-dev build-essential libncurses5-dev tk-dev libxml2-dev libxslt1-dev texinfo libc6-dev-i386 zip unzip gfortran liblapack-dev libblas-dev m4
 
-DEFAULT_USER=ubuntu
+sudo apt-get install -y flex bison autoconf autogen libtool
+
+DEFAULT_USER=vagrant
 
 MINICONDA_FILE=Miniconda-latest-Linux-x86_64.sh
 CONDA_INSTALL_DIR=/home/${DEFAULT_USER}/miniconda2
@@ -21,7 +23,7 @@ chmod 755 /home/${DEFAULT_USER}/${MINICONDA_FILE}
 rm -rf /home/${DEFAULT_USER}/miniconda2
 echo "Installing Miniconda"
 /home/${DEFAULT_USER}/${MINICONDA_FILE} -b
-echo 'export PATH=\${PATH}:/home/ubuntu/miniconda2/bin' >> /home/${DEFAULT_USER}/.bashrc
+echo 'export PATH=\${PATH}:/home/${DEFAULT_USER}/miniconda2/bin' >> /home/${DEFAULT_USER}/.bashrc
 
 echo "Installing argcomplete"
 ${CONDA} install --quiet --yes argcomplete

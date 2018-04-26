@@ -1,0 +1,20 @@
+package:
+  name: rg_gdb
+  version: "8.1"
+
+build:
+   number: 1
+   string: v1
+
+requirements:
+   build:
+   run:
+ 
+
+source:
+  url: https://ftp.gnu.org/gnu/gdb/gdb-8.1.tar.gz
+  md5: 0c85ecbb43569ec43b1c9230622e84ab
+
+about:
+  home: https://www.gnu.org/software/gdb
+  license: GNU General Public License, version 3.

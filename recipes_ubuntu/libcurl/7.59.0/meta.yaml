@@ -1,0 +1,22 @@
+package:
+  name: rg_libcurl.ubuntu
+  version: "7.59.0"
+
+source:
+  url: https://curl.haxx.se/download/curl-7.59.0.tar.xz
+  md5: 04c00832fa62d443b8745b056464fb30
+
+build:
+  number: 1
+  string: gcc55
+
+requirements:
+   build:
+    -  rg_gcc =5.5
+   run:
+    -  rg_gcc >=5.5
+
+about:
+  home: https://curl.haxx.se/libcurl/
+  license: BSD 
+  summary: libcurl - the multiprotocol file transfer library

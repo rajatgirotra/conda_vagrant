@@ -7,7 +7,7 @@ sudo yum install -y wget vim httpd
 sudo yum groupinstall -y "Development Tools"
 sudo yum install -y texi2html texinfo
 sudo yum install -y epel-release
-sudo yum install -y htop makeself sqlite-devel readline-devel openssl-devel tk-devel bzip2-devel gdbm-devel zlib-devel ncurses-devel xz-devel libxml2-devel libxslt-devel gcc-gfortran lapack-devel blas-devel libpng-devel glibc-devel.i686 libgcc.i686 libstdc++-devel.i686 ncurses-devel.i686
+sudo yum install -y htop makeself sqlite-devel readline-devel openssl-devel tk-devel bzip2-devel gdbm-devel zlib-devel ncurses-devel xz-devel libxml2-devel libxslt-devel gcc-gfortran lapack-devel blas-devel libpng-devel glibc-devel.i686 libgcc.i686 libstdc++-devel.i686 ncurses-devel.i686 libssh2-devel
 
 DEFAULT_USER=vagrant
 
