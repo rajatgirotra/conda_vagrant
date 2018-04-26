@@ -1,6 +1,10 @@
-Install Vagrant
-Install VirtualBox
-Install VBGuest plugin (something like vagrant plugin install vbguest)
+Install Vagrant "sudo dpkg -i <vagrant.deb>"
+Install VirtualBox "google"
+Install VBGuest plugin (something like vagrant plugin install vbguest) 
+vagrant login
+rajatgirotra@yahoo.com
+password
+my dell xps
 sudo /etc/init.d/vboxdrv setup
 sudo /sbin/rcvboxdrv setup
 sudo mount -t vboxsf -o uid=1000,gid=1000 vagrant /vagrant
