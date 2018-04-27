@@ -6,7 +6,7 @@ echo "Ubuntu Provisioning"
 sudo apt-get update
 sudo apt-get install -y g++ libsqlite3-dev libbz2-dev libreadline-dev zlib1g-dev libssl-dev libgdbm-dev build-essential libncurses5-dev tk-dev libxml2-dev libxslt1-dev texinfo libc6-dev-i386 zip unzip gfortran liblapack-dev libblas-dev m4
 
-sudo apt-get install -y flex bison autoconf autogen libtool
+sudo apt-get install -y flex bison autoconf autogen libtool libssh2-1-dev
 
 DEFAULT_USER=vagrant
 

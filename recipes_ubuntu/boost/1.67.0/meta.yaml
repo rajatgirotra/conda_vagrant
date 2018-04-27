@@ -1,15 +1,14 @@
 package:
   name: rg_boost.ubuntu
-  version: "1.63.0"
+  version: "1.67.0"
 
 build:
   number: 1
   string: gcc55
 
 source:
-  fn:  boost_1_63_0.tar.bz2
-  url: http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.bz2
-  md5: 1c837ecd990bb022d07e7aab32b09847
+  url: https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.bz2
+  sha256: 2684c972994ee57fc5632e03bf044746f6eb45d4920c343937a465fd67a5adba
 
 requirements:
   build:

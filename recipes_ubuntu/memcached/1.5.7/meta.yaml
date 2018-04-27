@@ -9,10 +9,10 @@ source:
 requirements:
   build:
     - rg_gcc =5.5
-    - rg_libevent 2.1.8 gcc55
+    - rg_libevent 2.0.22 gcc55
   
   run:
-    - rg_libevent 2.1.8 gcc55
+    - rg_libevent 2.0.22 gcc55
     - rg_gcc >=5.5
 
 build:
