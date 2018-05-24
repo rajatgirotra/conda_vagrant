@@ -29,15 +29,15 @@ Vagrant.configure(2) do |config|
   #  end
   #end
 
-#  config.vm.define "centos" do |centos|
-#    centos.vm.box = "centos/7"
-#    config.vm.synced_folder ".", "/vagrant"
-#    centos.vm.provision "shell", path: "centos_provision.sh"
-#    centos.vm.network :forwarded_port, guest: 80, host: 23456
-#    centos.vm.provider "virtualbox" do |vb|
-#      vb.memory = 4096
-#      vb.cpus = 1
-#    end
-#  end
+  #config.vm.define "centos" do |centos|
+  #  centos.vm.box = "centos/7"
+  #  config.vm.synced_folder ".", "/vagrant"
+  #  centos.vm.provision "shell", path: "centos_provision.sh"
+  #  centos.vm.network :forwarded_port, guest: 80, host: 23456
+  #  centos.vm.provider "virtualbox" do |vb|
+  #    vb.memory = 4096
+  #    vb.cpus = 1
+  #  end
+  #end
 
 end

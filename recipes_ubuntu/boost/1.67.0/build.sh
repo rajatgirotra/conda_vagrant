@@ -10,10 +10,11 @@ set -x -e
 #INCLUDE_PATH="${PREFIX}/include"
 #LIBRARY_PATH="${PREFIX}/lib"
 PYTHON="${PREFIX}/bin/python"
+ICU_PATH=/usr/include/x86_64-linux-gnu
 ./bootstrap.sh \
     --prefix="${PREFIX}" \
     --with-python="${PYTHON}" \
-    --with-icu="${PREFIX}" \
+    --with-icu="${ICU_PATH}" \
     | tee bootstrap.log 2>&1
 
 ./b2 -q \
