@@ -4,16 +4,16 @@ package:
 
 build:
   number: 1
-  string: gcc5
+  string: gcc55
 
 source:
   path: .
 
 requirements:
   build:
-    - rg_python_base.ubuntu 3.6.3 gcc5
+    - rg_python_base.ubuntu 3.6.3 gcc55
   run:
-    - rg_python_base.ubuntu 3.6.3 gcc5
+    - rg_python_base.ubuntu 3.6.3 gcc55
 test:
   imports:
     - jinja2

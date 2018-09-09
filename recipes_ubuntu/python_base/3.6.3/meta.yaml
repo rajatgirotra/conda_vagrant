@@ -9,14 +9,15 @@ source:
 
 requirements:
   build:
-    - patchelf >=0.8
-    - rg_gcc  5.4.0
+    - rg_patchelf >=0.8
+    - rg_gcc =5.5
   run:
-    - rg_gcc  >=5.4.0
+    - rg_gcc >=5.5
 
 build:
+  no_link: bin/python
   number: 1
-  string: gcc5
+  string: gcc55
 
 test:
   commands:

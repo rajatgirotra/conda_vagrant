@@ -12,7 +12,7 @@ source:
 
 requirements:
   build:
-    - rg_python_base.ubuntu 2.7.14 gcc55
+    - rg_python_base.ubuntu 3.6.3 gcc55
     - rg_gcc =5.5
     #- icu               [unix]
     #- bzip2             [unix]
@@ -21,7 +21,7 @@ requirements:
   run:
     # python dependency is here due to libboost-python library that depends on
     # python version
-    - rg_python_base.ubuntu 2.7.14 gcc55
+    - rg_python_base.ubuntu 3.6.3 gcc55
     - rg_gcc >=5.5
     #- icu               [unix]
     #- zlib

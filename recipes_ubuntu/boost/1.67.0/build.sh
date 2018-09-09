@@ -9,7 +9,7 @@ set -x -e
 
 #INCLUDE_PATH="${PREFIX}/include"
 #LIBRARY_PATH="${PREFIX}/lib"
-PYTHON="${PREFIX}/bin/python"
+PYTHON="${PREFIX}/bin/python3"
 ICU_PATH=/usr/include/x86_64-linux-gnu
 ./bootstrap.sh \
     --prefix="${PREFIX}" \

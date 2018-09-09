@@ -8,9 +8,9 @@ build:
 
 requirements:
    build:
-    - rg_python_base.ubuntu 2.7.14 gcc55
+    - rg_python_base.ubuntu 3.6.3 gcc55
    run:
-    - rg_python_base.ubuntu 2.7.14 gcc55
+    - rg_python_base.ubuntu 3.6.3 gcc55
  
 
 source:

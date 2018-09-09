@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PYTHON="${PREFIX}/bin/python"
+PYTHON="${PREFIX}/bin/python3"
 export CFLAGS="-I${PREFIX}/include"
 export CXXFLAGS="-I${PREFIX}/include"
 export LDFLAGS="-L${PREFIX}/lib"

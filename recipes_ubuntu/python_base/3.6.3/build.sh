@@ -5,12 +5,11 @@ SRC_DIR=$(basename ${PWD})
 cd ..
 mkdir objdir
 cd objdir
-../${SRC_DIR}/configure --enable-shared --enable-ipv6 --prefix=$PREFIX --enable-unicode=ucs4
+../${SRC_DIR}/configure --enable-shared --enable-ipv6 --prefix=$PREFIX --enable-unicode=ucs4 --with-ensurepip=yes
 make
 make install
 
 cd ${PREFIX}/bin
-#ln -s python3 python
 
 PIP="${PREFIX}/bin/pip3"
 
